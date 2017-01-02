@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<table class="table table-striped">
+<tr><th>ID</th><th>User Name</th><th>Email</th><th>role</th><th>status</th></tr>
+<tr ng-repeat="user in users">
+<td>{{user.id}}</td><td>{{user.username}}</td><td>{{user.email}}</td><td>{{user.role}}</td>
+<td>{{user.isOnline}}</td>
+<td><a href="#" >Edit</a></td>
+<td><a href="" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-trash"></span></a></td>
+
+</tr>
+</table>
+</div>
+</body>
+
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+<script type="text/javascript"
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="_job/jobcontroller.js"></script>
+<script type="text/javascript" src="_job/jobservice.js"></script>
+
+</html>

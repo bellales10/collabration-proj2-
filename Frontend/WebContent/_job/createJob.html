@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<td>Job Title</td>
+<td><input type="text" ng-model="job.jobTitle"></td>
+</tr>
+<tr>
+<td>Job Description</td>
+<td><textarea rows="" cols="" ng-model="job.jobDescription"></textarea></td>
+</tr>
+<tr>
+<td>Skills Required</td>
+<td><input type="text" ng-model="job.skillsRequired"></td>
+</tr>
+<tr>
+<td>salary</td>
+<td><input type="text" ng-model="job.salary"></td>
+</tr>
+<tr>
+<td>location</td>
+<td><input type="text" ng-model="job.location"></td>
+</tr>
+<tr>
+<td><input type="submit" value="post job" ng-click="saveJob()" ></td>
+</tr>
+</table>
+</form>
+</body>
+
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+<script type="text/javascript"
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="_job/jobcontroller.js"></script>
+<script type="text/javascript" src="_job/jobservice.js"></script>
+
+</html>

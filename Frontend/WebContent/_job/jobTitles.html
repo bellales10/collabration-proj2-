@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr>
+<th>Job Title</th>
+</tr>
+<tr ng-repeat="job in jobs">
+<td>
+<a href="getJobDetail/{{job.jobId}}">{{job.jobTitle}}</a>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+<script type="text/javascript"
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="_job/jobcontroller.js"></script>
+<script type="text/javascript" src="_job/jobservice.js"></script>
+</html>
